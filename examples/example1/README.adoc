@@ -20,7 +20,7 @@ separated.
 
 The example application uses
 
-- Spring Boot 3
+- Spring Boot 4
 - Spring Data JPA (Hibernate)
 - Liquibase
 

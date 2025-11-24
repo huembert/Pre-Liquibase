@@ -23,7 +23,7 @@ import net.lbruun.springboot.preliquibase.example.jpa.db1.Person;
 import net.lbruun.springboot.preliquibase.example.jpa.db1.PersonRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 
 /**
  * Example Unit test. Not meant to be a show case for best practice of writing Spring Boot JPA unit
@@ -34,7 +34,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
  */
 @DataJpaTest(
     properties = {
-      "spring.liquibase.change_log=classpath:/liquibase/db1/changelog/db.changelog-master.yaml"
+      "spring.liquibase.change_log=classpath:/liquibase/db1/changelog/db.changelog-master.yaml",
+      "preliquibase.sqlScriptReferences=classpath:/preliquibase/db1/"
     })
 public class PersonRepoTest {
 
