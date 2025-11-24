@@ -62,13 +62,24 @@ jobs:
 
       - name: Maven execution
         run: |
+          # Create a suitable software version string from the git ref name
+          # (need to account for how GitHub creates refs for Pull Requests)
+
+          software_version="${GITHUB_REF_NAME#v}"
+          if [[ "$software_version" =~ /merge$ ]]; then
+            software_version="${software_version%/merge}.pr"
+          fi
+
+          echo "Software version string: \"$software_version\""
+          
+          # Execute Maven
           ./mvnw \
             --show-version \
             --batch-mode \
             --no-transfer-progress \
             -Dci.project.url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
             -Dci.scm.tag="${GITHUB_REF_NAME}" \
-            -Drevision="${GITHUB_REF_NAME#v}" \
+            -Drevision="${software_version}" \
             -P$MVN_PROFILES \
               $MVN_PHASE
         env:

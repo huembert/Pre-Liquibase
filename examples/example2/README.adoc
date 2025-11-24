@@ -23,7 +23,7 @@ in the traditional sense (see Example1). Therefore, most beans must be configure
 
 This example application uses
 
-- Spring Boot 3
+- Spring Boot 4
 - Spring Data JPA (Hibernate) - with multiple data sources
 - Liquibase
 
