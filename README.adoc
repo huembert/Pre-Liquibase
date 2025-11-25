@@ -454,19 +454,19 @@ easily adapt to a single datasource use-case.
 (use latest published version)
 |Spring Boot 3.2 + 3.3
 |JDK 17
-|`main3`
+|
 |No longer maintained
 
 |1.4.x
 |Spring Boot 3.1
 |JDK 17
-|`main3`
+|
 |No longer maintained
 
 |1.3.x
 |Spring Boot 3.0
 |JDK 17
-|`main3`
+|
 |No longer maintained
 
 |1.2.x
