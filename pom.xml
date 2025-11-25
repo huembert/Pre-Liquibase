@@ -39,7 +39,7 @@ limitations under the License.
     <!-- parent doesn't need to be installed, deployed or signed.
          (these are overridden in submodules)                -->
     <maven.install.skip>true</maven.install.skip>
-    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+    <skipPublishing>true</skipPublishing>
     <gpg.skip>true</gpg.skip>
 
 
