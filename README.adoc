@@ -11,7 +11,7 @@ ifdef::env-github[]
 endif::[]
 
 
-WARNING: Spring Boot 3.5.8 and Spring Boot 4.0.0 contain a regression which https://github.com/lbruun-net/Pre-Liquibase/issues/45[negatively affects]
+WARNING: 25-Nov-2025: Spring Boot 3.5.8 and Spring Boot 4.0.0 contain a regression which https://github.com/lbruun-net/Pre-Liquibase/issues/45[negatively affects]
 Pre-Liquibase. You are advised to skip those releases, i.e. use v3.5.9+ / v4.0.1+ instead or 
 stay on a previous version. Alternative strategies can be found https://github.com/lbruun-net/Pre-Liquibase/issues/45#issuecomment-3584363728[HERE].
 
